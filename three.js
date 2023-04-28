@@ -30,8 +30,8 @@ document.body.onscroll = cameraMove;
 renderer.setSize(canvasContainer.offsetWidth, canvasContainer.offsetHeight);
 renderer.setPixelRatio(window.devicePixelRatio);
 
-const earthTexture = new TextureLoader().load('./img/happy_earth.jpg');
-const moonTexture = new TextureLoader().load('./img/moon.jpg');
+const earthTexture = new TextureLoader().load('./img/happy_earth.png');
+const moonTexture = new TextureLoader().load('./img/moon.png');
 const earth = new Mesh(
     new SphereGeometry(6, 64, 64),
     new MeshStandardMaterial({
