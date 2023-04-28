@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@1,700&display=swap" rel="stylesheet">
+  <script type="module" src="/three.js" defer></script>
+  <script type="module" src="/intersection.js" defer></script>
+  <script type="module" src="/gauge.js" defer></script>
+  <title>Eath & Moon 3D Landing Page</title>
+</head>
+
+<body>
+  <canvas></canvas>
+  <main id="main-content">
+    <nav id="navbar">
+      <a href="#">Earth</a>
+    </nav>
+    <header id="main-header">
+      <div class="hidden item right">
+        <h1>Challenging new horizons</h1>
+        <button id="signup" class="btn-cta hidden right">sign up now! it's free</button>
+      </div>
+    </header>
+    <section id="standards">
+      <div class="hidden item left">
+        <h2>Leading-edge standards</h2>
+        <p>Developed in close collaboration with leading industry experts, we bring you the best services from the
+          world's top-tier organizations and support you to adopt, maintain, and optimize your standards and practices.
+          Our experts and resources are here to help you achieve a competitive edge, build and increase value, maximize
+          customer satisfaction, and optimize cost-effectiveness.
+          We believe in continuous growth, steady investments, and
+          endless innovations - so that you can reach the leading-edge standards you are aiming for.
+          We provide custom solutions to help grow your business by creating a steady stream of investments and
+          continuous growth to ensure success in the long run. With a global presence and have access to the best
+          opportunities around the world.
+          Stay ahead of the game with its cutting-edge technologies and solutions that keep up with the ever-evolving
+          trends in the market.
+        </p>
+      </div>
+      <div class="hidden item right">
+        <button class="btn" onclick="window.location.href='#stack';">explore</button>
+      </div>
+    </section>
+    <section id="benchmark" class="hidden right gauges">
+      <div class="gauge">
+        <h2>continious growth</h2>
+        <div class="outer">
+          <div class="inner">
+            <div class="percent" data-num="92">
+            </div>
+          </div>
+          <svg id="circle-1-xl" xmlns="http://www.w3.org/2000/svg" version="1.1" width="300px" height="300px">
+            <circle class='xl circle-1' cx="150" cy="150" r="140" stroke-linecap="round" />
+          </svg>
+          <svg id="circle-1-l" xmlns="http://www.w3.org/2000/svg" version="1.1" width="280px" height="280px">
+            <circle class='l circle-1' cx="140" cy="140" r="130" stroke-linecap="round" />
+          </svg>
+          <svg id="circle-1-m" xmlns="http://www.w3.org/2000/svg" version="1.1" width="220px" height="220px">
+            <circle class='m circle-1' cx="110" cy="110" r="100" stroke-linecap="round" />
+          </svg>
+          <svg id="circle-1-s" xmlns="http://www.w3.org/2000/svg" version="1.1" width="170px" height="170px">
+            <circle class='s circle-1' cx="85" cy="85" r="75" stroke-linecap="round" />
+          </svg>
+        </div>
+      </div>
+      <div class="gauge">
+        <h2>steady investment</h2>
+        <div class="outer">
+          <div class="inner">
+            <div class="percent" data-num="96">
+            </div>
+          </div>
+          <svg id="circle-2-xl" xmlns="http://www.w3.org/2000/svg" version="1.1" width="300px" height="300px">
+            <circle class='xl circle-2' cx="150" cy="150" r="140" stroke-linecap="round" />
+          </svg>
+          <svg id="circle-2-l" xmlns="http://www.w3.org/2000/svg" version="1.1" width="280px" height="280px">
+            <circle class='l circle-2' cx="140" cy="140" r="130" stroke-linecap="round" />
+          </svg>
+          <svg id="circle-2-m" xmlns="http://www.w3.org/2000/svg" version="1.1" width="220px" height="220px">
+            <circle class='m circle-2' cx="110" cy="110" r="100" stroke-linecap="round" />
+          </svg>
+          <svg id="circle-2-s" xmlns="http://www.w3.org/2000/svg" version="1.1" width="170px" height="170px">
+            <circle class='s circle-2' cx="85" cy="85" r="75" stroke-linecap="round" />
+          </svg>
+        </div>
+      </div>
+      <div class="gauge">
+        <h2>endless innovations</h2>
+        <div class="outer">
+          <div class="inner">
+            <div class="percent" data-num="100">
+            </div>
+          </div>
+          <svg id="circle-3-xl" xmlns="http://www.w3.org/2000/svg" version="1.1" width="300px" height="300px">
+            <circle class='xl circle-3' cx="150" cy="150" r="140" stroke-linecap="round" />
+          </svg>
+          <svg id="circle-3-l" xmlns="http://www.w3.org/2000/svg" version="1.1" width="280px" height="280px">
+            <circle class='l circle-3' cx="140" cy="140" r="130" stroke-linecap="round" />
+          </svg>
+          <svg id="circle-3-m" xmlns="http://www.w3.org/2000/svg" version="1.1" width="220px" height="220px">
+            <circle class='m circle-3' cx="110" cy="110" r="100" stroke-linecap="round" />
+          </svg>
+          <svg id="circle-3-s" xmlns="http://www.w3.org/2000/svg" version="1.1" width="170px" height="170px">
+            <circle class='s circle-3' cx="85" cy="85" r="75" stroke-linecap="round" />
+          </svg>
+        </div>
+      </div>
+    </section>
+    <section id="three-d-space">
+      <div class="hidden item left">
+        <button class="btn" onclick="window.location.href='#stack';">explore</button>
+      </div>
+      <div class="hidden item right">
+        <h2>3D space</h2>
+        <p>Our platform provides a secure environment where you can invest in your future and create a bright future for
+          yourself and for others. We offer a wide range of features that will help you reach your goals with ease and
+          joy - from the Happy Moon & Happy Earth initiatives, to the investment opportunities we provide - everything
+          here is designed for your success!
+          We've developed a comprehensive service package in partnership with some of the top industry players to help
+          you drive success. Our experienced team and resources are available to assist you on your journey to build
+          value, enhance customer satisfaction and gain a competitive advantage. It's our goal to make sure you're
+          well-positioned to optimize performance across the board.
+          y\You can explore endless possibilities when it comes to innovating and growing your business – no matter how
+          big or small it is! Get ready to challenge new horizons!
+        </p>
+      </div>
+    </section>
+    <section id="happy-earth">
+      <div class="hidden item left">
+        <h2>Create your own Happy Earth</h2>
+        <p>LOur platform provides a secure environment where you can invest in your future and create a bright future
+          for yourself and for others. We offer a wide range of features that will help you reach your goals with ease
+          and joy - from the Happy Moon & Happy Earth initiatives, to the investment opportunities we provide -
+          everything here is designed for your success! With up-to-date reports on the latest technologies, innovations,
+          developments and strategies, as well as practical advice and insights on how to stay ahead, you will always be
+          in the know about the most effective strategies for staying ahead. Our top-notch experts provide
+          industry-leading insights, resources, and guidance to help you stay ahead of the competition, gain an edge in
+          the market, and increase your business's success.
+        </p>
+      </div>
+      <div class="hidden item right">
+        <button class="btn" onclick="window.location.href='#stack';">explore</button>
+      </div>
+    </section>
+    <section id="stack" class="hidden right about">
+      <h2>About</h2>
+      <p><img class="about-img" id='vite' src="/img/vite.png" alt="vite"> Vite build tool, VanillaJS dev environment
+      </p>
+      <p><img class="about-img" src="/img/yarn.svg" alt="yarn"> Yarn package manager
+      </p>
+      <p><img class="about-img" id='threejs' src="/img/threejs.png" alt="threejs">
+        ThreeJS responsive 3D animated objects geometry, textures,
+        light & camera movement on scroll </p>
+      <p><img class="about-img" id='js' src="/img/JS.svg.png" alt="js"> JavaScript animation control with
+        intersection & mutation observers, gauges SVG drawing
+      </p>
+      <p><img class="about-img" id='html' src="/img/HTML5.png" alt="html"> HTML & CSS, for landing page responsive
+        layout & animation <img class="about-img" id='css' src="/img/CSS3.svg.png" alt="css">
+      </p>
+      <button class="hidden item right up-container btn-up"
+        onclick="window.location.href='#main-header';">▲</a></button>
+    </section>
+    <footer id="footer">
+      <a href="#"><img src="./img/ar.svg" alt=""></a>
+    </footer>
+
+
+    <div class="blur"></div>
+    <div class="popup-form">
+      <h3>Get in touch</h3>
+      <form action="https://getform.io/f/d6b0629f-9720-4259-b68f-e587d6711c85" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email" required>
+
+        <label for="content">Message:</label>
+        <textarea id="message" name="message-earth_moon" required></textarea>
+
+        <button type="submit">Send</button>
+      </form>
+    </div>
+
+
+
+
+  </main>
+</body>
+
+</html>

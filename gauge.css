@@ -1,0 +1,55 @@
+.gauges {
+    grid-column: 2 / 12;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.gauge {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.outer {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    box-shadow: inset 0 0 9px white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    /* z-index: +3; */
+}
+
+circle {
+    fill: none;
+    /* stroke: #d300ff; */
+    /* stroke: linear-gradient(yellow, red); */
+    stroke: url('#GradientColor');
+    stroke-width: 20px;
+    stroke-dasharray: 880;
+    stroke-dashoffset: 880;
+}
+
+svg {
+    /* display: flex; */
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.inner {
+    display: flex;
+    width: 260px;
+    height: 260px;
+    border-radius: 50%;
+    box-shadow: 0 0 9px white;
+    /* position: relative; */
+    /* border: 2px solid white; */
+    justify-content: center;
+    align-items: center;
+}
